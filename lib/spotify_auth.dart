@@ -2,8 +2,8 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class SpotifyService {
-  final String clientId = 'd40584fc8ebe43ebb91e2fd5ed7509c5';
-  final String clientSecret = '0ded2e036a424fb0a7c4645bdccb803c';
+  final String clientId = 'CLIENT_ID';
+  final String clientSecret = 'CLIENT_SECRET';
 
   Future<String> getAccessToken() async {
     final response = await http.post(
